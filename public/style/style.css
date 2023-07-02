@@ -1,4 +1,78 @@
 * {
   margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+#main #keys {
+  display: block;
+  width: 100%;
+  height: 350px;
+  max-width: 1080px;
+  position: relative;
+  margin: 40px auto 0;
+  cursor: none;
+}
+
+#main #keys .key {
+  position: relative;
+  border: 4px solid black;
+  border-radius: 7px;
+  -webkit-transition: all .07s ease;
+  transition: all .07s ease;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 2;
+}
+
+#main #keys .key:not(.sharp) {
+  float: left;
+  width: 10%;
+  height: 100%;
+  background-color: white;
+}
+
+#main #keys .sharp {
+  position: absolute;
+  width: 6%;
+  height: 60%;
+  background-color: black;
+  top: 0;
+  z-index: 3;
+}
+
+#main #keys .key[data-key="87"] {
+  left: 7%;
+}
+
+#main #keys .key[data-key="69"] {
+  left: 17%;
+}
+
+#main #keys .key[data-key="84"] {
+  left: 37%;
+}
+
+#main #keys .key[data-key="89"] {
+  left: 47%;
+}
+
+#main #keys .key[data-key="85"] {
+  left: 57%;
+}
+
+#main #keys .key[data-key="79"] {
+  left: 77%;
+}
+
+#main #keys .key[data-key="80"] {
+  left: 87%;
 }
 /*# sourceMappingURL=style.css.map */
